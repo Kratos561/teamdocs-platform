@@ -1,0 +1,22 @@
+{
+  "name": "teamdocs-platform",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "dev": "pnpm --filter @teamdocs/web dev",
+    "dev:collab": "pnpm --filter @teamdocs/collab dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "db:generate": "pnpm --filter @teamdocs/database generate",
+    "db:migrate": "pnpm --filter @teamdocs/database migrate"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22 <27"
+  }
+}
